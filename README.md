@@ -79,10 +79,3 @@ You’ll need to:
 MIT License – feel free to fork, improve, and use!
 
 ---
-
-Would you like me to:
-
-* Customize this with your GitHub username or name?
-* Add a privacy policy markdown file too?
-
-Let me know and I’ll generate those!
