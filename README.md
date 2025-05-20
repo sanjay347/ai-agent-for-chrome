@@ -1,6 +1,6 @@
 ## 📚 AI Web Agent – Chrome Extension
 
-> Summarize and interact with any webpage using Claude AI + Firebase Google Login
+> Summarize and interact with any webpage using Claude AI
 
 ---
 
@@ -8,7 +8,6 @@
 
 * ✅ Summarizes the current webpage using Claude (via OpenRouter)
 * ✅ Supports Q\&A prompts about page content
-* ✅ Google Login via Firebase
 * ✅ Clean UI with copy-to-clipboard functionality
 * ✅ Secure personal API key input (not hardcoded)
 
@@ -18,12 +17,11 @@
 
 1. You visit any webpage
 2. Open the extension
-3. Login with Google (handled via Firebase)
-4. Ask questions like:
+3. Ask questions like:
 
    * "Summarize this page"
    * "What are the key points?"
-5. Claude AI responds with smart answers
+4. Claude AI responds with smart answers
 
 ---
 
@@ -56,17 +54,6 @@ Get your key at: [https://openrouter.ai/keys](https://openrouter.ai/keys)
 2. Turn on **Developer Mode**
 3. Click **Load Unpacked**
 4. Select the extension folder
-
----
-
-### 🔐 Firebase Setup (Optional)
-
-Google Login is pre-wired using Firebase Authentication.
-
-If you want to use your own Firebase project:
-
-* Replace the config in `popup.js` with your Firebase project’s config
-* Enable **Google Sign-In** in the Firebase Console
 
 ---
 
