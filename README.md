@@ -70,8 +70,7 @@ You’ll need to:
 ### 🙌 Credits
 
 * Claude 3 by Anthropic via [OpenRouter](https://openrouter.ai)
-* Firebase Authentication
-* Developed by \[Your Name] 👋
+* Developed by Sanjay Kotturi & Nanvitha Challa 👋
 
 ---
 
