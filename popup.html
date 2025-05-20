@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Web Agent</title>
+  <style>
+    body {
+      width: 360px;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 16px;
+      background-color: #f4f6f8;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      font-size: 14px;
+      box-sizing: border-box;
+      background: white;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #responseContainer {
+      position: relative;
+      margin-top: 16px;
+    }
+
+    #response {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 12px 32px 12px 12px; /* extra right padding for copy icon */
+      font-size: 14px;
+      max-height: 200px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    #copyBtn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      padding: 4px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      width: 40px;
+      z-index: 2;
+      margin-right: 10px;
+    }
+
+    #copyBtn::before {
+      content: "Copy";
+    }
+
+    #copyBtn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #copiedMessage {
+      text-align: center;
+      font-size: 12px;
+      color: green;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Ask AI Agent</h3>
+  <textarea id="userInput" placeholder="e.g., Summarize this page..."></textarea>
+  <button id="askBtn">Ask</button>
+
+  <div id="responseContainer" style="display: none;">
+    <button id="copyBtn" title="Copy to clipboard"></button>
+    <div id="response"></div>
+  </div>
+
+  <div id="copiedMessage"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
